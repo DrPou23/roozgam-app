@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#FAF9F5" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1F1E1B" media="(prefers-color-scheme: dark)" />
+    <meta name="description" content="روزگام — همراه آرام فستینگ و پیاده‌روی، آفلاین و شخصی" />
+    <link rel="icon" href="./favicon.ico" sizes="48x48" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon-180x180.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="روزگام" />
+    <title>روزگام</title>
+    <script>
+      // Apply the saved theme and language before first paint so nothing flashes.
+      try {
+        var p = JSON.parse(localStorage.getItem('roozgam:prefs') || '{}');
+        if (p.theme === 'light' || p.theme === 'dark') document.documentElement.dataset.theme = p.theme;
+        if (p.locale === 'en') { document.documentElement.lang = 'en'; document.documentElement.dir = 'ltr'; }
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="./assets/index-CM77nhCM.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-C3Q1U96u.css">
+  <link rel="manifest" href="./manifest.webmanifest"></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
